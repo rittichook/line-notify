@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LineNotifyController;
+use App\Http\Controllers\BugReportController;
+
 
 use App\Http\Controllers\YourController;
 
@@ -21,6 +23,9 @@ use App\Http\Controllers\YourController;
 Route::get('/', function () {
     return 'api-line-notify';
 });
+
+Route::resource('bugreport', 'App\Http\Controllers\BugReportController');
+
 
 
 // routes/web.php
